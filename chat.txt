@@ -5,16 +5,12 @@ public class arrayExample {
 
         int daysOfMonth[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         boolean isValidInput = false;
-        int size = daysOfMonth.length;
-        System.out.println("Length of the array is " + size + ".");
-
-
 
         Scanner sc = new Scanner(System.in);
 
         int month;
         System.out.println("Input the month: ");
-        if(!sc.hasNextInt()){
+        if (!sc.hasNextInt()) {
             System.out.println("Invalid input");
             sc.close();
             return;
@@ -73,9 +69,10 @@ public class arrayExample {
 
             System.out.print("You input month " + monthName + ". ");
             System.out.println("Your month has " + daysOfMonth[month - 1] + " days.");
-
-            sc.close();
         }
+
+        sc.close();
+
     }
 }
 
