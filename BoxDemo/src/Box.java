@@ -19,6 +19,12 @@ public class Box {
         this.length = length;
     }
 
+    public Box(Box box){
+        this.height = box.height;
+        this.width = box.width;
+        this.length = box.length;
+    }
+
     double volume(){
 
         return height * width * length;
